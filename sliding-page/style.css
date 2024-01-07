@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 14px;
+}
+
+.container-block{
+    background-image: url('background-img/img-back.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.container{
+    width:70%;
+    height:500px;
+    margin:auto;  /*left and right side automatically equally set*/
+    
+    border-radius: 14px;
+    box-shadow: 2px 3px 4px rgb(88, 80, 80);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container:hover{
+    box-shadow: none;
+    border-radius: none;
+    transition-duration: 2s;
+}
+.slide,
+.heading{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+    object-fit: cover;
+    border-radius:14px;
+}
+.heading{
+    top:12px;
+    right:12px;
+    font-family:Pacifico;
+    color:white;
+    width:260px;
+    font-size: 24px;
+    
+
+}
+
+
+
+.buttons{
+    display: flex;
+    
+}
+.prev,
+.next {
+    font-size: 50px;
+   padding:20px;
+    border:none;
+    color:rgb(221, 199, 199);
+    position:absolute;
+    top:50%;
+    font-weight: bolder;
+    cursor:pointer;
+}
+.next{
+    right:0px;   
+}
+
+.prev:active,
+.next:active{
+    transition-duration: 0.5;
+    color:rgb(65, 60, 60);
+}
+
+@media(max-width:700px){
+    .heading{
+      font-size: 20px;
+      font-weight: bold;
+      margin-top:390px; 
+      width:94%;
+      color: black;
+      font-family:Arvo , ital , Pacifico;
+      
+       
+    }
+}
+
+
+
+.block-title{
+    color:white;
+    font-family:Bilbo , Rubik , Glitch   ;
+    font-size:40px;
+    text-align: center;
+    font-weight: bold;
+    
+    
+}
